@@ -1,11 +1,11 @@
 import React from 'react'
-
-const Button = ({value}) => {
-  return (
-    <button className="button__primary">
-      {value}
-    </button>
-  )
+// eslint-disable-next-line react/prop-types
+const Button = ({ value }) => {
+    return (
+        <button className="button__primary">
+            {value}
+        </button>
+    )
 }
 
 export default Button

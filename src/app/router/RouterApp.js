@@ -1,24 +1,32 @@
-import React from "react";
-import { BrowserRouter as Router, Link, Route, Switch } from "react-router-dom";
-import Dashboard from "../dashboard/Dashboard";
+import React from 'react'
+
+import { Link } from 'react-router-dom'
+
+// import Dashboard from '../dashboard/Dashboard'
 
 const RouterApp = () => {
-  return (
-    <>
-      <Link className="container__link--l" to="/">
+    return (
+        <>
+            <Link className="container__link--l" to="/">
         Home
-      </Link>
-      <Link className="container__link--l" to="/docs">
-        Docs
-      </Link>
-      <Link className="container__link--l" to="/usage">
-        Usage
-      </Link>
-      <Link className="container__link--l" to="/usage">
-        GitHub 🔥
-      </Link>
-    </>
-  );
-};
+            </Link>
 
-export default RouterApp;
+            <Link className="container__link--l" to="/docs">
+        Docs
+            </Link>
+
+            <Link className="container__link--l" to="/usage">
+        Usage
+            </Link>
+
+            <a
+                className="container__link--l"
+                href="https://github.com/phuc-create/ui-web-page"
+            >
+        GitHub 🔥
+            </a>
+        </>
+    )
+}
+
+export default RouterApp
